@@ -1,6 +1,6 @@
-import { FC } from 'react';
-import Card from '../ui/Card';
-import { ISectionCardData } from '../utils/Data';
+import { FC } from "react";
+import Card from "../ui/Card";
+import { ISectionCardData } from "../utils/Data";
 
 interface CardSectionProps {
     title: string;
@@ -11,7 +11,9 @@ interface CardSectionProps {
 const CardSection: FC<CardSectionProps> = ({ title, version, data }) => {
     return (
         <section className="grid gap-5 p-5 pt-1 md:p-0">
-            <div className="text-xl font-bold text-highlight">{title}</div>
+            <div className="text-xl font-bold text-highlight techNameReveal">
+                {title}
+            </div>
             <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 xl::grid-cols-5 gap-5">
                 {data.map((card) => (
                     <Card

@@ -27,7 +27,7 @@ const ProjectsCard: FC<ProjectsCardProps> = ({
     return (
         <>
             {isCompleted && (
-                <div className="flex gap-3 relative bg-cardPrimary rounded-lg overflow-ellipsis p-3">
+                <div className="flex gap-3 relative bg-cardPrimary rounded-lg overflow-ellipsis p-3 techProjectReveal">
                     <Link target="_blank" href={href || "/"}>
                         <div className="flex gap-3">
                             <div

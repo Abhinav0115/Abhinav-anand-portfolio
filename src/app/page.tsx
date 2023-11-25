@@ -17,7 +17,7 @@ export default function Home() {
     return (
         <div>
             <Cover />
-            <div className="flex flex-col gap-10 lg:px-10">
+            <div className="flex flex-col gap-10 lg:px-10 overflow-hidden">
                 <span id="Introduction" className="invisible" />
                 <Hero />
                 <span id="Projects" className="invisible" />
