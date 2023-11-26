@@ -1,71 +1,77 @@
 "use client";
-import { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import { FC } from "react";
 import Profile from "@/../public/images/heroProfile.jpg";
 import { TypeAnimation } from "react-type-animation";
 
-import ScrollReveal from "scrollreveal";
+// import ScrollReveal from "scrollreveal";
 
 interface IntroProps {}
 
-ScrollReveal({
-    duration: 1000,
-    delay: 100,
-    reset: false,
-    opacity: 0,
-    easing: "ease-in-out",
-    distance: "150px",
-});
-
 const Intro: FC<IntroProps> = ({}) => {
+    const refToComponent = React.useRef(null);
+
     useEffect(() => {
-        ScrollReveal().reveal(".IntroReveal", {
-            origin: "right",
-            distance: "200px",
-        });
-        // ScrollReveal().reveal(".coverReveal", {
-        //     origin: "top",
-        //     delay: 0,
-        //     distance: "0px",
-        //     duration: 800,
-        //     rotate: {
-        //         x: 0,
-        //         y: 90,
-        //         z: 0,
-        //     },
-        // });
-        ScrollReveal().reveal(".techCardReveal", {
-            origin: "bottom",
-            interval: 150,
-            // distance: "0px",
-            rotate: {
-                x: 0,
-                y: 90,
-                z: 0,
-            },
-        });
-        ScrollReveal().reveal(".techProjectReveal", {
-            origin: "bottom",
-            interval: 150,
-            // distance: "0px",
-            rotate: {
-                x: 0,
-                y: 90,
-                z: 0,
-            },
-        });
-        ScrollReveal().reveal(".techNameReveal", {
-            distance: "0px",
-            origin: "top",
-            interval: 200,
-            duration: 600,
-            rotate: {
-                x: 90,
-                y: 0,
-                z: 0,
-            },
-        });
+        async function loadScrollReveal() {
+            if (refToComponent) {
+                const ScrollReveal = (await import("scrollreveal")).default;
+
+                ScrollReveal({
+                    duration: 1000,
+                    delay: 100,
+                    reset: true,
+                    opacity: 0,
+                    easing: "ease-in-out",
+                    distance: "150px",
+                });
+
+                ScrollReveal().reveal(".IntroReveal", {
+                    origin: "bottom",
+                    distance: "200px",
+                });
+
+                // ScrollReveal().reveal(".PhotoReveal", {
+                //     origin: "bottom",
+                //     distance: "200px",
+                // });
+
+                ScrollReveal().reveal(".techCardReveal", {
+                    origin: "bottom",
+                    interval: 150,
+                    // distance: "0px",
+                    rotate: {
+                        x: 0,
+                        y: 90,
+                        z: 0,
+                    },
+                });
+
+                ScrollReveal().reveal(".techProjectReveal", {
+                    origin: "bottom",
+                    interval: 150,
+                    // distance: "0px",
+                    rotate: {
+                        x: 0,
+                        y: 90,
+                        z: 0,
+                    },
+                });
+
+                ScrollReveal().reveal(".techNameReveal", {
+                    distance: "0px",
+                    origin: "top",
+                    interval: 200,
+                    duration: 600,
+                    rotate: {
+                        x: 90,
+                        y: 0,
+                        z: 0,
+                    },
+                });
+            }
+        }
+        loadScrollReveal();
     }, []);
 
     return (
@@ -74,7 +80,7 @@ const Intro: FC<IntroProps> = ({}) => {
                 <Image
                     src={Profile}
                     alt=""
-                    className=" rounded-xl  w-[90%] mx-auto lg:h-full lg:w-full border-2 shadow-md border-white"
+                    className=" rounded-xl  w-[90%] mx-auto lg:h-full lg:w-full border-2 shadow-md border-white PhotoReveal"
                 />
             </div>
             <div className="flex flex-col justify-between flex-1 p-5 md:p-0 lg:ml-2">
