@@ -18,7 +18,7 @@ const ProjectCardSection: FC<ProjectCardSectionProps> = ({ title, data }) => {
 
     return (
         <section className="grid gap-5 p-5 mt-2 md:p-0">
-            <div className="text-3xl font-bold text-center text-highlight mb-4 mt-5">
+            <div className="text-3xl font-bold text-center text-highlight mb-4 mt-5 NameReveal">
                 {title}
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl::grid-cols-3 gap-5">

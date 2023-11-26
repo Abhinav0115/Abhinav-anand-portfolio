@@ -18,8 +18,8 @@ const Intro: FC<IntroProps> = ({}) => {
                 const ScrollReveal = (await import("scrollreveal")).default;
 
                 ScrollReveal({
-                    duration: 1000,
-                    delay: 100,
+                    duration: 700,
+                    delay: 50,
                     reset: true,
                     opacity: 0,
                     easing: "ease-in-out",
@@ -29,6 +29,7 @@ const Intro: FC<IntroProps> = ({}) => {
                 ScrollReveal().reveal(".IntroReveal", {
                     origin: "right",
                     distance: "200px",
+                    interval: 150,
                 });
 
                 // ScrollReveal().reveal(".PhotoReveal", {
@@ -58,7 +59,7 @@ const Intro: FC<IntroProps> = ({}) => {
                     },
                 });
 
-                ScrollReveal().reveal(".techNameReveal", {
+                ScrollReveal().reveal(".NameReveal", {
                     distance: "0px",
                     origin: "top",
                     interval: 200,

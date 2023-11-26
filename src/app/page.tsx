@@ -23,7 +23,7 @@ export default function Home() {
                 <span id="Projects" className="invisible" />
                 <ProjectCardSection title="Projects" data={projectCard} />
                 <span id="TechStack" className="invisible" />
-                <span className="text-3xl capitalize font-semibold text-center mt-7 text-highlight">
+                <span className="text-3xl capitalize font-semibold text-center mt-7 text-highlight NameReveal">
                     Tech Stack
                 </span>
                 <CardSection title="Frontend" data={frontendCard} />

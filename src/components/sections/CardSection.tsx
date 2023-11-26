@@ -11,7 +11,7 @@ interface CardSectionProps {
 const CardSection: FC<CardSectionProps> = ({ title, version, data }) => {
     return (
         <section className="grid gap-5 p-5 pt-1 md:p-0">
-            <div className="text-xl font-bold text-highlight techNameReveal">
+            <div className="text-xl font-bold text-highlight NameReveal">
                 {title}
             </div>
             <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 xl::grid-cols-5 gap-5">
