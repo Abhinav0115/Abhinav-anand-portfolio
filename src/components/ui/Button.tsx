@@ -28,6 +28,7 @@ const buttonVariants = cva(
             sizes: {
                 iconOnly: ["text-xs", "p-1"],
                 small: ["text-xs", "py-2", "px-4"],
+                small_btn: ["text-xs", "py-1.5", "px-2"],
                 medium: ["text-sm", "font-bold", "py-3", "px-4"],
             },
         },

@@ -27,7 +27,7 @@ const Intro: FC<IntroProps> = ({}) => {
                 });
 
                 ScrollReveal().reveal(".IntroReveal", {
-                    origin: "bottom",
+                    origin: "right",
                     distance: "200px",
                 });
 

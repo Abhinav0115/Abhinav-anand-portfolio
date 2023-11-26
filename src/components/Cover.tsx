@@ -54,7 +54,7 @@ const Cover: FC<CoverProps> = ({}) => {
                             >
                                 <Button
                                     variant="primary"
-                                    sizes={"small"}
+                                    sizes={"small_btn"}
                                     className="hover:bg-gray-200 hover:text-black transition-colors duration-2 w-full"
                                 >
                                     <Github />
