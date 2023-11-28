@@ -63,7 +63,7 @@ const Intro: FC<IntroProps> = ({}) => {
                     distance: "0px",
                     origin: "top",
                     interval: 200,
-                    duration: 600,
+                    duration: 700,
                     rotate: {
                         x: 90,
                         y: 0,
@@ -91,10 +91,13 @@ const Intro: FC<IntroProps> = ({}) => {
                     </div>
                     <div className="text-secondary text-lg mt-2 md:mt-0  max-w-[400px] IntroReveal">
                         <TypeAnimation
+                            style={{ whiteSpace: "pre-line" }}
                             sequence={[
                                 "",
                                 600,
-                                " I love to break boundaries and I always come with a 'can do' attitude with a strong sense of responsibility looking forward to working with a team that enjoys challenging projects and has an innovative outlook. I'm also open to tips on interview preparation, building a personal brand, launching a start-up, and he really really needs productivity tips. I always open to new opportunities and would love to have a chat over coffee. He is always open to new opportunities and would love to have a chat over coffee.",
+                                `I'm Abhinav Anand, a recent graduate with a fresh perspective and a passion for 'frontend developers'. As I step into the professional realm armed with a bachelor's degree in 'computer science and engineering', this portfolio is a glimpse into my skills, aspirations, and the potential I bring to your team.\nI love to break boundaries and am always eager to learn new things.\nI am currently on the lookout for new and exciting job opportunities where I can bring my skills to the table.`,
+
+                                // " I love to break boundaries and I always come with a 'can do' attitude with a strong sense of responsibility looking forward to working with a team that enjoys challenging projects and has an innovative outlook. I'm also open to tips on interview preparation, building a personal brand, launching a start-up, and he really really needs productivity tips. I always open to new opportunities and would love to have a chat over coffee. He is always open to new opportunities and would love to have a chat over coffee.",
                                 1000,
                             ]}
                             wrapper="span"

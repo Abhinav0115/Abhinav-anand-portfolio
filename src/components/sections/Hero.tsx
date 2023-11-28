@@ -5,7 +5,7 @@ interface HeroProps {}
 
 const Hero: FC<HeroProps> = ({}) => {
     return (
-        <section className="flex mt-10">
+        <section className="flex mt-9">
             <Intro />
         </section>
     );

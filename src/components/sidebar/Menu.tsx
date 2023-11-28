@@ -10,12 +10,15 @@ import {
     CodepenIcon,
     CpuIcon,
     FileSpreadsheet,
+    GraduationCapIcon,
+    LaptopIcon,
 } from "lucide-react";
 import List from "../ui/List";
 import { useMenu } from "../Provider";
 import { projectCard } from "@/components/utils/Data";
 
 import SideProject from "./sidebarprojectSection";
+import Link from "next/link";
 
 interface MenuProps {}
 
@@ -37,12 +40,18 @@ const Menu: FC<MenuProps> = ({}) => {
             <List link="#Introduction" effect="slideUp">
                 <Flame /> Introduction
             </List>
+            {/* <List link="#Experience" effect="slideUp">
+                <LaptopIcon /> Working Experience
+            </List> */}
             <List link="#Projects" effect="slideUp">
                 <Code /> Projects
             </List>
             <List link="#TechStack" effect="slideUp">
                 <CpuIcon /> Tech Stack
             </List>
+            {/* <List link="#Education" effect="slideUp">
+                <GraduationCapIcon /> Education
+            </List> */}
 
             {/* List 2 */}
             <div className="mt-5">Socials</div>
@@ -93,13 +102,16 @@ const Menu: FC<MenuProps> = ({}) => {
             <div className="mt-5">Projects</div>
 
             <SideProject data={projectCard} />
-            <span className="text-sm text-center text-secondary mt-2 p-2">
+            <Link
+                href="#Projects"
+                className="text-sm text-center text-secondary mt-2 p-2"
+            >
                 For more projects, please
                 <br />
                 visit the{" "}
                 <span className="text-red-800">&apos;Projects&apos; </span>
                 section.
-            </span>
+            </Link>
         </div>
     );
 };

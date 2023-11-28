@@ -131,3 +131,5 @@ dist
 
 # Mac
 .DS_Store
+src/components/sections/ExperienceSection.tsx
+src/components/sections/EducationSection.tsx

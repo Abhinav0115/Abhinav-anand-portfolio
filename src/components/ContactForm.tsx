@@ -104,6 +104,9 @@ const ContactForm: FC<ContactFormProps> = ({}) => {
                         >
                             {loader ? <Spinner /> : "Submit"}
                         </Button>
+                        <span className="text-center text-gray-600 select-text">
+                            Email Id: Abhinav011501@gmail.com
+                        </span>
                     </form>
                 </div>
             )}
