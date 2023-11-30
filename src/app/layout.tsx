@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import ContactForm from "@/components/ContactForm";
 import { ContactFormProvider, MenuProvider } from "@/components/Provider";
 import { Toaster } from "react-hot-toast";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
     title: "Abhinav Anand Portfolio (@abhinav0115)",
@@ -39,6 +40,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body className="select-none">
+                <Analytics />
                 <MenuProvider>
                     <ContactFormProvider>
                         <ContactForm />
