@@ -11,12 +11,12 @@ export const metadata: Metadata = {
     description: "Abhinav Anand Portfolio - MERN Stack Developer",
     // icons: ["/images/profilePic_Icon.png"],
     icons: {
-        icon: "/images/profilePic_Icon.png",
-        shortcut: "/images/profilePic_Icon.png",
-        apple: "/images/profilePic_Icon.png",
+        icon: "/favicon.ico",
+        shortcut: "/favicon.ico",
+        apple: "/favicon.ico",
         other: {
             rel: "apple-touch-icon-precomposed",
-            url: "/images/profilePic_Icon.png",
+            url: "/favicon.ico",
         },
     },
     generator: "Abhinav Anand",
