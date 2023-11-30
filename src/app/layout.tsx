@@ -5,12 +5,20 @@ import Navbar from "@/components/Navbar";
 import ContactForm from "@/components/ContactForm";
 import { ContactFormProvider, MenuProvider } from "@/components/Provider";
 import { Toaster } from "react-hot-toast";
-import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
     title: "Abhinav Anand Portfolio (@abhinav0115)",
     description: "Abhinav Anand Portfolio - MERN Stack Developer",
-    icons: ["/images/profilePic_Icon.png"],
+    // icons: ["/images/profilePic_Icon.png"],
+    icons: {
+        icon: "/images/profilePic_Icon.png",
+        shortcut: "/images/profilePic_Icon.png",
+        apple: "/images/profilePic_Icon.png",
+        other: {
+            rel: "apple-touch-icon-precomposed",
+            url: "/images/profilePic_Icon.png",
+        },
+    },
     generator: "Abhinav Anand",
     publisher: "Abhinav Anand",
     creator: "Abhinav Anand",
@@ -53,7 +61,6 @@ export default function RootLayout({
                         </div>
                     </ContactFormProvider>
                 </MenuProvider>
-                <Analytics />
             </body>
         </html>
     );
