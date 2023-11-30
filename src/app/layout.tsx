@@ -40,7 +40,6 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body className="select-none">
-                <Analytics />
                 <MenuProvider>
                     <ContactFormProvider>
                         <ContactForm />
@@ -54,6 +53,7 @@ export default function RootLayout({
                         </div>
                     </ContactFormProvider>
                 </MenuProvider>
+                <Analytics />
             </body>
         </html>
     );
