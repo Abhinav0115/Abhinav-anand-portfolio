@@ -32,6 +32,7 @@ const ProjectCardSection: FC<ProjectCardSectionProps> = ({ title, data }) => {
                         techStack={card.techStack}
                         url={card.url}
                         isLive={card.isLive}
+                        isRepo={card.isRepo}
                         isCompleted={card.isCompleted}
                         description={card.description}
                     />

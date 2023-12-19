@@ -9,6 +9,7 @@ interface ProjectsCardProps {
     url?: string;
     isLive?: boolean;
     isCompleted?: boolean;
+    isRepo?: boolean;
     bgColor: string;
 }
 
@@ -22,6 +23,7 @@ const SidebarProjectCard: FC<ProjectsCardProps> = ({
     url,
     isLive,
     isCompleted,
+    isRepo,
     bgColor,
 }) => {
     return (
@@ -30,12 +32,13 @@ const SidebarProjectCard: FC<ProjectsCardProps> = ({
                 <div className="relative">
                     <List
                         target="_blank"
-                        link={href || "/"}
+                        // link={href || ""}
+                        link={isRepo ? href : ""}
                         effect="slideUp"
                         className=""
                     >
                         <div
-                            className="flex h-full text-white py-1 px-1 rounded-md justify-center items-center "
+                            className="flex h-full text-white py-1 px-1 rounded-md justify-center items-center"
                             style={{ backgroundColor: bgColor }}
                         >
                             <Icon className="h-6 w-6" />
@@ -45,8 +48,8 @@ const SidebarProjectCard: FC<ProjectsCardProps> = ({
                     {isLive && (
                         <Link
                             target="_blank"
-                            href={url || "/"}
-                            className="absolute -right-4 top-5  text-xs bg-green-600 p-0.5 px-3 py-1 rounded-md "
+                            href={url || ""}
+                            className="absolute -right-4 top-5 text-sm text-white font-semibold bg-green-600 p-0.5 px-3 py-1 rounded-md hover:bg-green-700"
                         >
                             Live
                         </Link>

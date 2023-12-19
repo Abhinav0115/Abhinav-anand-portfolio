@@ -38,6 +38,7 @@ export interface IProjectSectionCardData {
     description?: string;
     isCompleted: boolean;
     isLive: boolean;
+    isRepo?: boolean;
 }
 
 export const projectCard: IProjectSectionCardData[] = [
@@ -45,21 +46,22 @@ export const projectCard: IProjectSectionCardData[] = [
         id: 1,
         title: "College Job Portal",
         techStack:
-            "Next.js 13, Bootstrap5, ReactJs, NodeJs, Express, MongoDB, Mongoose, Nodemailer, Redux, Next-Auth.",
+            "Next.Js 13, Bootstrap5, React.Js, Node..Js, Express, MongoDB, Mongoose, Nodemailer, Redux, Next-Auth.",
         Icon: GraduationCap,
         bgColor: "#264653",
-        // href: "https://github.com/Abhinav0115/JobPortal",
+        href: "https://github.com/Abhinav0115/JobPortal",
         url: "https://opju-job-portal.netlify.app/",
         description:
             "A job portal for students of OPJU. Students can apply for jobs, internships, and can also post jobs.",
         isCompleted: true,
+        isRepo: false,
         isLive: true,
     },
     {
         id: 2,
         title: "Prompts.ai",
         techStack:
-            "Next.js 13, JavaScript, Tailwind CSS, ReactJs, MongoDB, Mongoose, DaisyUI.",
+            "Next.Js 13, JavaScript, Tailwind CSS, React.Js, MongoDB, Mongoose, DaisyUI.",
         Icon: Terminal,
         bgColor: "#2a9d8f",
         href: "https://github.com/Abhinav0115/project_prompt",
@@ -68,12 +70,13 @@ export const projectCard: IProjectSectionCardData[] = [
             "Prompts.ai is an open-source AI prompting tool for modern world to discover, creare and share creative prompts.",
         isCompleted: true,
         isLive: true,
+        isRepo: true,
     },
     {
         id: 3,
         title: "File Sharing",
         techStack:
-            "ReactJs, NodeJs, Express, MongoDB, Git, Vercel, Mongoose, Tailwind CSS.",
+            "React.Js, Node..Js, Express, MongoDB, Git, Vercel, Mongoose, Tailwind CSS.",
         Icon: Share2,
         bgColor: "#e9c46a",
         href: "https://github.com/Abhinav0115/file-sharing",
@@ -84,12 +87,13 @@ export const projectCard: IProjectSectionCardData[] = [
             "A Simple File Sharing Application with 7 days validity and 60Mb data sharing limits.",
         isCompleted: true,
         isLive: true,
+        isRepo: true,
     },
     {
         id: 4,
         title: "Weather App",
         techStack:
-            "ReactJs, BootStrap5, Axios, API, geoCitiesAPI, OpenWeatherMap API.",
+            "React.Js, BootStrap5, Axios, API, geoCitiesAPI, OpenWeatherMap API.",
         Icon: CloudyIcon,
         bgColor: "#ff2c55",
         href: "https://github.com/Abhinav0115/get-weather",
@@ -98,12 +102,13 @@ export const projectCard: IProjectSectionCardData[] = [
             "This app give weather information of searched location whose population more than 4 lakh (400k).",
         isCompleted: true,
         isLive: true,
+        isRepo: true,
     },
     {
         id: 5,
         title: "Git Repo",
         techStack:
-            "ReactJs, BootStrap5, React-Context, Axios, API, Firebase, GitHub API.",
+            "React.Js, BootStrap5, React-Context, Axios, API, Firebase, GitHub API.",
         Icon: GitPullRequestClosedIcon,
         bgColor: "#e76f51",
         href: "https://github.com/Abhinav0115/GitRepo",
@@ -112,12 +117,13 @@ export const projectCard: IProjectSectionCardData[] = [
             "App that searches the Github public repository for a given username, built with React and Firebase. ",
         isCompleted: true,
         isLive: true,
+        isRepo: true,
     },
     {
         id: 6,
         title: "Daily Habits",
         techStack:
-            "ReactJs, JavaScript, Bootstrap, TypeScript, API, LocalStorage, Git",
+            "React.Js, JavaScript, Bootstrap, TypeScript, API, LocalStorage, Git",
         Icon: CalendarDays,
         bgColor: "#933e05",
         href: "https://github.com/Abhinav0115/Daily-Habit",
@@ -126,6 +132,7 @@ export const projectCard: IProjectSectionCardData[] = [
             "Daily Habits is web-based and browser-specific, and it uses cookies to store Habits in the browser. we can retrieve the same habits we inputted after refreshing or reloading the page.",
         isCompleted: true,
         isLive: true,
+        isRepo: true,
     },
     {
         id: 7,
@@ -139,11 +146,12 @@ export const projectCard: IProjectSectionCardData[] = [
             "This program contains a Brief description and a graphical visualizer of different sorting algorithms.",
         isCompleted: true,
         isLive: true,
+        isRepo: true,
     },
     {
         id: 8,
         title: "Piximage",
-        techStack: "ReactJs, Axios, Bootstrap, JavaScript, Pexels API, Git",
+        techStack: "React.Js, Axios, Bootstrap, JavaScript, Pexels API, Git",
         Icon: Image,
         bgColor: "#A3B763",
         href: "https://github.com/Abhinav0115/Piximage",
@@ -152,11 +160,12 @@ export const projectCard: IProjectSectionCardData[] = [
             "Daily Habits is web-based and browser-specific, and it uses cookies to store Habits in the browser. we can retrieve the same habits we inputted after refreshing or reloading the page.",
         isCompleted: true,
         isLive: true,
+        isRepo: true,
     },
     {
         id: 9,
         title: "Movie Search App",
-        techStack: "ReactJs, Axios, Bootstrap, JavaScript, TVMaze API, Git",
+        techStack: "React.Js, Axios, Bootstrap, JavaScript, TVMaze API, Git",
         Icon: FilmIcon,
         bgColor: "#C3ACD0",
         href: "https://github.com/Abhinav0115/Movie-App",
@@ -164,25 +173,27 @@ export const projectCard: IProjectSectionCardData[] = [
         description: "Movie Search App", //TODO:
         isCompleted: true,
         isLive: true,
+        isRepo: true,
     },
     {
         id: 10,
         title: "TicTacToe Game",
-        techStack: "ReactJs, Bootstrap, JavaScript, HTML, CSS, Tostify, GitHub",
+        techStack: "React.Js, Bootstrap, JavaScript, HTML, CSS, Tostify, GitHub",
         Icon: XCircle,
-        bgColor: "#CE5A67", //TODO:
+        bgColor: "#CE5A67",
         href: "https://github.com/Abhinav0115/TicTacToe_Game",
         url: "https://abhinav0115.github.io/TicTacToe_Game/",
         description:
             "This is an online Tic Tac Toe game where 2 players take their chance as a 'cross' or 'circle' to win.",
         isCompleted: true,
         isLive: true,
+        isRepo: true,
     },
     {
         id: 11,
         title: "Random Quote Generator",
         techStack:
-            "ReactJs, Axios, Bootstrap, JavaScript, quotable.io API, Git",
+            "React.Js, Axios, Bootstrap, JavaScript, quotable.io API, Git",
         Icon: Quote,
         bgColor: "#706233",
         href: "https://github.com/Abhinav0115/Random_Quote",
@@ -191,6 +202,7 @@ export const projectCard: IProjectSectionCardData[] = [
             "Random famous Quote generator build using API (api.quotable.io).",
         isCompleted: true,
         isLive: true,
+        isRepo: true,
     },
     {
         id: 12,
@@ -204,6 +216,7 @@ export const projectCard: IProjectSectionCardData[] = [
             "This is an online simple basic calculator built using JavaScript. You can click the buttons or type to perform calculations as you would on a physical calculator.",
         isCompleted: true,
         isLive: true,
+        isRepo: true,
     },
     {
         id: 13,
@@ -216,6 +229,7 @@ export const projectCard: IProjectSectionCardData[] = [
         description: "Scientific Calculator",
         isCompleted: true,
         isLive: true,
+        isRepo: true,
     },
     {
         id: 14,
@@ -228,6 +242,7 @@ export const projectCard: IProjectSectionCardData[] = [
         description: "BMI Calculator",
         isCompleted: true,
         isLive: true,
+        isRepo: true,
     },
     {
         id: 15,
@@ -240,6 +255,7 @@ export const projectCard: IProjectSectionCardData[] = [
         description: "SignIn Form",
         isCompleted: true,
         isLive: true,
+        isRepo: false,
     },
 ];
 

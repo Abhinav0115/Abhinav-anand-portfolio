@@ -17,6 +17,7 @@ const SideProject: FC<SidebarProjectCardSectionProps> = ({ data }) => {
                     Icon={card.Icon}
                     url={card.url}
                     isLive={card.isLive}
+                    isRepo={card.isRepo}
                     isCompleted={card.isCompleted}
                     bgColor={card.bgColor}
                 />
