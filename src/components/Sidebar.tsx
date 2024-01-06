@@ -1,7 +1,7 @@
 'use client';
 import { FC } from 'react';
 import Logo from './sidebar/Logo';
-import Menu from './sidebar/Menu';
+import Menu from './sidebar/SidebarMenu';
 import { useMenu } from './Provider';
 
 interface SideBarProps {}

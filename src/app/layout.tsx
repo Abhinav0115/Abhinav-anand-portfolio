@@ -1,11 +1,8 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import SideBar from "@/components/Sidebar";
-import Navbar from "@/components/Navbar";
-import ContactForm from "@/components/ContactForm";
-import { ContactFormProvider, MenuProvider } from "@/components/Provider";
 import { Toaster } from "react-hot-toast";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import Menu from "@/components/Menu";
 
 export const metadata: Metadata = {
     title: "Abhinav Anand Portfolio (@abhinav0115)",
@@ -50,19 +47,9 @@ export default function RootLayout({
         <html lang="en">
             <body className="select-none">
                 <SpeedInsights />
-                <MenuProvider>
-                    <ContactFormProvider>
-                        <ContactForm />
-                        <Toaster />
-                        <div className="flex">
-                            <SideBar />
-                            <main className="flex-1 pl-0 lg:pl-[300px]">
-                                <Navbar />
-                                {children}
-                            </main>
-                        </div>
-                    </ContactFormProvider>
-                </MenuProvider>
+                <Toaster />
+
+                <Menu>{children}</Menu>
             </body>
         </html>
     );

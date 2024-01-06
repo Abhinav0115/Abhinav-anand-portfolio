@@ -69,7 +69,7 @@ body {
 
 /* Scroll bar */
 ::-webkit-scrollbar {
-    width: 10px; /* Width of the scrollbar */
+    width: 8px; /* Width of the scrollbar */
 }
 
 /* Define the scrollbar track (background) */
@@ -80,17 +80,13 @@ body {
 /* Define the scrollbar thumb (the draggable part) */
 ::-webkit-scrollbar-thumb {
     background: hsla(0, 0%, 0%, 0.4); /* Background color of the thumb */
-    border-radius: 6px; /* Rounded corners for the thumb */
+    border-radius: 5px; /* Rounded corners for the thumb */
 }
 
 /* Define the scrollbar thumb when hovered over */
 ::-webkit-scrollbar-thumb:hover {
-    background: hsla(
-        0,
-        0%,
-        0%,
-        0.5
-    ); /* Background color of the thumb when hovered */
+    /* Background color of the thumb when hovered */
+    background: hsla(0, 0%, 48%, 0.5);
 }
 
 .animation_iteration {
