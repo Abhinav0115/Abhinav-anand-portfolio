@@ -16,9 +16,10 @@ export async function POST(req: Request) {
 
         await resend.sendEmail({
             // from: "email@mail.abhinav0115.dev",
-            from: "onboarding@resend.dev",
+            // from: "onboarding@resend.dev",
+            from: "portfolio@resend.dev",
             to: "abhinav011501@gmail.com",
-            subject: "Contact Form Submission",
+            subject: "Portfolio contact form submission",
             react: EmailTemplete({ name, email, message }), //TODO: add phone
         });
 
