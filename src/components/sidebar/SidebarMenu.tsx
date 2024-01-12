@@ -1,18 +1,17 @@
 import { FC } from "react";
 import {
-    Code,
+    CodeIcon,
     Flame,
     Github,
     Home,
     Linkedin,
-    Video,
     X,
     CodepenIcon,
     CpuIcon,
     FileSpreadsheet,
-    GraduationCapIcon,
-    LaptopIcon,
 } from "lucide-react";
+
+import { SiGeeksforgeeks, SiLeetcode } from "react-icons/si";
 import List from "../ui/List";
 import { useMenu } from "../Provider";
 import { projectCard } from "@/components/utils/Data";
@@ -38,13 +37,13 @@ const Menu: FC<MenuProps> = ({}) => {
                 <Home /> Home
             </List>
             <List link="#Introduction" effect="slideUp">
-                <Flame /> Introduction
+                <Flame /> Career Objective
             </List>
             {/* <List link="#Experience" effect="slideUp">
                 <LaptopIcon /> Working Experience
             </List> */}
             <List link="#Projects" effect="slideUp">
-                <Code /> Projects
+                <CodeIcon /> Projects
             </List>
             <List link="#TechStack" effect="slideUp">
                 <CpuIcon /> Tech Stack
@@ -52,12 +51,11 @@ const Menu: FC<MenuProps> = ({}) => {
             {/* <List link="#Education" effect="slideUp">
                 <GraduationCapIcon /> Education
             </List> */}
-
             {/* List 2 */}
             <div className="mt-5">Socials</div>
             {/* <List
                 target="_blank"
-                link="https://www.instagram.com/ezsnippet/"
+                link="https://www.instagram.com/"
                 effect="slideUp"
             >
                 <Instagram color="#b5179e" /> Instagram
@@ -85,22 +83,28 @@ const Menu: FC<MenuProps> = ({}) => {
             </List>
             <List
                 target="_blank"
+                link="https://leetcode.com/Abhinav0115/"
+                effect="slideUp"
+            >
+                <SiLeetcode className="h-6 w-6" color="#f77f00" /> LeetCode
+            </List>
+            {/* <List
+                target="_blank"
+                link="https://auth.geeksforgeeks.org/user/abhinav0115"
+                effect="slideUp"
+            >
+                <SiGeeksforgeeks className="h-6 w-6" color="#17c008" />{" "}
+                GeeksforGeeks
+            </List> */}
+            <List
+                target="_blank"
                 link="https://codepen.io/Abhinav0115"
                 effect="slideUp"
             >
                 <CodepenIcon color="#e63946" /> CodePen.io
             </List>
-            {/* <List
-                target="_blank"
-                link="https://stackoverflow.com/users/13744925/abhinav0115"
-                effect="slideUp"
-            >
-                <Layers color="#f77f00" /> Stack overflow
-            </List> */}
-
             {/* List 3 */}
             <div className="mt-5">Projects</div>
-
             <SideProject data={projectCard} />
             <Link
                 href="#Projects"

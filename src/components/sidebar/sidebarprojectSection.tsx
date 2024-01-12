@@ -9,7 +9,7 @@ interface SidebarProjectCardSectionProps {
 const SideProject: FC<SidebarProjectCardSectionProps> = ({ data }) => {
     return (
         <>
-            {data.slice(0, 7).map((card) => (
+            {data.slice(0, 6).map((card) => (
                 <ProjectCardSection
                     href={card.href}
                     key={card.id}

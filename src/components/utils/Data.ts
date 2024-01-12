@@ -178,7 +178,8 @@ export const projectCard: IProjectSectionCardData[] = [
     {
         id: 10,
         title: "TicTacToe Game",
-        techStack: "React.Js, Bootstrap, JavaScript, HTML, CSS, Tostify, GitHub",
+        techStack:
+            "React.Js, Bootstrap, JavaScript, HTML, CSS, Tostify, GitHub",
         Icon: XCircle,
         bgColor: "#CE5A67",
         href: "https://github.com/Abhinav0115/TicTacToe_Game",
@@ -262,23 +263,31 @@ export const projectCard: IProjectSectionCardData[] = [
 export const frontendCard: ISectionCardData[] = [
     {
         id: 1,
-        title: "HTML",
-        src: "/tech/frontend/html.jpeg",
+        title: "React.JS",
+        src: "/tech/frontend/ReactJS.jpg",
         //exp: "1 day ago",
         // snippetCount: 1128,
-        progress: 90,
-        href: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+        progress: 80,
     },
     {
         id: 2,
-        title: "CSS",
-        src: "/tech/frontend/css.jpeg",
+        title: "Next.JS 13",
+        src: "/tech/frontend/nextjs13.jpeg",
         //exp: "1 day ago",
         // snippetCount: 1128,
-        progress: 90,
+        progress: 80,
     },
     {
         id: 3,
+        title: "Redux",
+        src: "/tech/frontend/redux.jpeg",
+        //exp: "1 day ago",
+        // snippetCount: 1128,
+        progress: 70,
+    },
+
+    {
+        id: 4,
         title: "JavaScript",
         src: "/tech/frontend/js.jpg",
         //exp: "1 day ago",
@@ -286,7 +295,15 @@ export const frontendCard: ISectionCardData[] = [
         progress: 85,
     },
     {
-        id: 4,
+        id: 5,
+        title: "TypeScript",
+        src: "/tech/frontend/typescript.png",
+        //exp: "1 day ago",
+        // snippetCount: 1128,
+        progress: 30,
+    },
+    {
+        id: 6,
         title: "Tailwind CSS",
         src: "/tech/frontend/tailwind.jpg",
         //exp: "1 day ago",
@@ -294,45 +311,30 @@ export const frontendCard: ISectionCardData[] = [
         progress: 90,
     },
     {
-        id: 5,
+        id: 7,
         title: "BootStrap",
         src: "/tech/frontend/bootstrap.jpeg",
         //exp: "1 day ago",
         // snippetCount: 1128,
         progress: 90,
     },
-    {
-        id: 6,
-        title: "React.Js",
-        src: "/tech/frontend/ReactJS.jpg",
-        //exp: "1 day ago",
-        // snippetCount: 1128,
-        progress: 80,
-    },
-    {
-        id: 7,
-        title: "Nextjs 13",
-        src: "/tech/frontend/nextjs13.jpeg",
-        //exp: "1 day ago",
-        // snippetCount: 1128,
-        progress: 80,
-    },
-    {
-        id: 8,
-        title: "Redux",
-        src: "/tech/frontend/redux.jpeg",
-        //exp: "1 day ago",
-        // snippetCount: 1128,
-        progress: 70,
-    },
-    {
-        id: 9,
-        title: "TypeScript",
-        src: "/tech/frontend/typescript.png",
-        //exp: "1 day ago",
-        // snippetCount: 1128,
-        progress: 30,
-    },
+    // {
+    //     id: 8,
+    //     title: "HTML",
+    //     src: "/tech/frontend/html.jpeg",
+    //     //exp: "1 day ago",
+    //     // snippetCount: 1128,
+    //     progress: 90,
+    //     href: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+    // },
+    // {
+    //     id: 9,
+    //     title: "CSS",
+    //     src: "/tech/frontend/css.jpeg",
+    //     //exp: "1 day ago",
+    //     // snippetCount: 1128,
+    //     progress: 90,
+    // },
 ];
 
 export const backendCard: ISectionCardData[] = [
@@ -551,12 +553,12 @@ export const otherCards: ISectionCardData[] = [
 ];
 export const languages: ISectionCardData[] = [
     {
-        id: 1,
-        title: "C Programming",
-        src: "/tech/programming/cprogram.png",
+        id: 3,
+        title: "Python",
+        src: "/tech/programming/python2.jpg",
         //exp: '1 day ago',
         // snippetCount: 1128,
-        progress: 70,
+        progress: 60,
     },
     {
         id: 2,
@@ -567,11 +569,11 @@ export const languages: ISectionCardData[] = [
         progress: 70,
     },
     {
-        id: 3,
-        title: "Python",
-        src: "/tech/programming/python2.jpg",
+        id: 1,
+        title: "C Programming",
+        src: "/tech/programming/cprogram.png",
         //exp: '1 day ago',
         // snippetCount: 1128,
-        progress: 60,
+        progress: 70,
     },
 ];

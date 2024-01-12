@@ -17,7 +17,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
     useEffect(() => {
         if (window.screen.width > 1000) {
             toast(
-                "Please, Disable Dark Mode Extension. \nIf something looks weird. Thanks!",
+                "Please disable the Dark Mode Extension. If something looks weird, Thanks!",
                 {
                     position: "top-left",
                     // duration: 4000,
@@ -41,10 +41,10 @@ const Navbar: FC<NavbarProps> = ({}) => {
             <div>
                 <TypeAnimation
                     sequence={[
+                        // 300,
+                        // "स्वागतम् - Welcome",
                         300,
-                        "Hello,",
-                        300,
-                        "Welcome to my Portfolio",
+                        "Welcome",
                         1000,
                         "",
                         // "Don't forget to leave a star ⭐️",
@@ -52,9 +52,9 @@ const Navbar: FC<NavbarProps> = ({}) => {
                     ]}
                     wrapper="span"
                     cursor={false}
-                    speed={20}
+                    speed={10}
                     repeat={1}
-                    deletionSpeed={60}
+                    deletionSpeed={40}
                     className="text-sm lg:text-2xl font-semibold "
                 />
             </div>

@@ -17,7 +17,7 @@ export default function Home() {
     return (
         <div>
             <Cover /> {/* Name Section */}
-            <div className="flex flex-col gap-10 lg:px-10 overflow-hidden">
+            <div className="flex flex-col gap-6 lg:px-10 overflow-hidden">
                 {/* Introduction section */}
 
                 <span id="Introduction" className="invisible" />
