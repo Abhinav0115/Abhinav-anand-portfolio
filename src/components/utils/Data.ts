@@ -65,7 +65,7 @@ export const projectCard: IProjectSectionCardData[] = [
         Icon: Terminal,
         bgColor: "#2a9d8f",
         href: "https://github.com/Abhinav0115/project_prompt",
-        url: "https://project-promptopia-gules.vercel.app/",
+        url: "https://promptsai-ab.vercel.app/",
         description:
             "Prompts.ai is an open-source AI prompting tool for modern world to discover, creare and share creative prompts.",
         isCompleted: true,
@@ -97,7 +97,7 @@ export const projectCard: IProjectSectionCardData[] = [
         Icon: CloudyIcon,
         bgColor: "#ff2c55",
         href: "https://github.com/Abhinav0115/get-weather",
-        url: "https://get-weather-files.vercel.app/",
+        url: "https://getweatherinfo.vercel.app/",
         description:
             "This app give weather information of searched location whose population more than 4 lakh (400k).",
         isCompleted: true,
