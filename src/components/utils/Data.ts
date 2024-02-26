@@ -54,7 +54,7 @@ export const projectCard: IProjectSectionCardData[] = [
         description:
             "A job portal for students of OPJU. Students can apply for jobs, internships, and can also post jobs.",
         isCompleted: true,
-        isRepo: false,
+        isRepo: true,
         isLive: true,
     },
     {
@@ -121,7 +121,7 @@ export const projectCard: IProjectSectionCardData[] = [
     },
     {
         id: 6,
-        title: "Daily Habits",
+        title: "Daily To Do",
         techStack:
             "React.Js, JavaScript, Bootstrap, TypeScript, API, LocalStorage, Git",
         Icon: CalendarDays,
@@ -129,7 +129,7 @@ export const projectCard: IProjectSectionCardData[] = [
         href: "https://github.com/Abhinav0115/Daily-Habit",
         url: "https://daily-habit-0115.netlify.app/",
         description:
-            "Daily Habits is web-based and browser-specific, and it uses cookies to store Habits in the browser. we can retrieve the same habits we inputted after refreshing or reloading the page.",
+            "Daily To Do is web-based and browser-specific, and it uses cookies to store Habits in the browser. we can retrieve the same habits we inputted after refreshing or reloading the page.",
         isCompleted: true,
         isLive: true,
         isRepo: true,
