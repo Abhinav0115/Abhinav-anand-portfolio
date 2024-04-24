@@ -15,6 +15,7 @@ import {
     Sigma,
     Puzzle,
     Frame,
+    BlocksIcon,
 } from "lucide-react";
 
 export interface ISectionCardData {
@@ -94,7 +95,7 @@ export const projectCard: IProjectSectionCardData[] = [
         title: "Amazon Clone App",
         techStack:
             "Typescript, React.JS, Next.JS, Material UI, axios, Redux-persist, Stripe Payments, Tailwindcss, Redux-toolkit, Supabase JS, Supabase Auth",
-        Icon: CloudyIcon,
+        Icon: BlocksIcon,
         bgColor: "#f98a1b",
         href: "https://github.com/Abhinav0115/Amazon-clone-app",
         url: "https://amazon-clone-ecom.vercel.app/",
