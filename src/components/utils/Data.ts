@@ -46,7 +46,7 @@ export const projectCard: IProjectSectionCardData[] = [
         id: 1,
         title: "College Job Portal",
         techStack:
-            "Next.Js 13, Bootstrap5, React.Js, Node..Js, Express, MongoDB, Mongoose, Nodemailer, Redux, Next-Auth.",
+            "Next.JS 13, Bootstrap5, React.JS, Node..JS, Express, MongoDB, Mongoose, Nodemailer, Redux, Next-Auth.",
         Icon: GraduationCap,
         bgColor: "#264653",
         href: "https://github.com/Abhinav0115/JobPortal",
@@ -58,10 +58,10 @@ export const projectCard: IProjectSectionCardData[] = [
         isLive: true,
     },
     {
-        id: 2,
+        id: 5,
         title: "Prompts.ai",
         techStack:
-            "Next.Js 13, JavaScript, Tailwind CSS, React.Js, MongoDB, Mongoose, DaisyUI.",
+            "Next.JS 13, JavaScript, Tailwind CSS, React.JS, MongoDB, Mongoose, DaisyUI.",
         Icon: Terminal,
         bgColor: "#2a9d8f",
         href: "https://github.com/Abhinav0115/project_prompt",
@@ -73,10 +73,10 @@ export const projectCard: IProjectSectionCardData[] = [
         isRepo: true,
     },
     {
-        id: 3,
+        id: 10,
         title: "File Sharing",
         techStack:
-            "React.Js, Node..Js, Express, MongoDB, Git, Vercel, Mongoose, Tailwind CSS.",
+            "React.JS, Node.JS, Express, MongoDB, Git, Vercel, Mongoose, Tailwind CSS.",
         Icon: Share2,
         bgColor: "#e9c46a",
         href: "https://github.com/Abhinav0115/file-sharing",
@@ -90,10 +90,25 @@ export const projectCard: IProjectSectionCardData[] = [
         isRepo: true,
     },
     {
-        id: 4,
+        id: 15,
+        title: "Amazon Clone App",
+        techStack:
+            "Typescript, React.JS, Next.JS, Material UI, axios, Redux-persist, Stripe Payments, Tailwindcss, Redux-toolkit, Supabase JS, Supabase Auth",
+        Icon: CloudyIcon,
+        bgColor: "#f98a1b",
+        href: "https://github.com/Abhinav0115/Amazon-clone-app",
+        url: "https://amazon-clone-ecom.vercel.app/",
+        description:
+            "Amazon Clone App built with Next.js, Tailwind CSS, Supabase, Redux Toolkit, TypeScript, Stripe, and more.",
+        isCompleted: true,
+        isLive: true,
+        isRepo: true,
+    },
+    {
+        id: 20,
         title: "Weather App",
         techStack:
-            "React.Js, BootStrap5, Axios, API, geoCitiesAPI, OpenWeatherMap API.",
+            "React.JS, BootStrap5, Axios, API, geoCitiesAPI, OpenWeatherMap API.",
         Icon: CloudyIcon,
         bgColor: "#ff2c55",
         href: "https://github.com/Abhinav0115/get-weather",
@@ -105,10 +120,10 @@ export const projectCard: IProjectSectionCardData[] = [
         isRepo: true,
     },
     {
-        id: 5,
+        id: 25,
         title: "Git Repo",
         techStack:
-            "React.Js, BootStrap5, React-Context, Axios, API, Firebase, GitHub API.",
+            "React.JS, BootStrap5, React-Context, Axios, API, Firebase, GitHub API.",
         Icon: GitPullRequestClosedIcon,
         bgColor: "#e76f51",
         href: "https://github.com/Abhinav0115/GitRepo",
@@ -120,10 +135,10 @@ export const projectCard: IProjectSectionCardData[] = [
         isRepo: true,
     },
     {
-        id: 6,
+        id: 30,
         title: "Daily To Do",
         techStack:
-            "React.Js, JavaScript, Bootstrap, TypeScript, API, LocalStorage, Git",
+            "React.JS, JavaScript, Bootstrap, TypeScript, API, LocalStorage, Git",
         Icon: CalendarDays,
         bgColor: "#933e05",
         href: "https://github.com/Abhinav0115/Daily-Habit",
@@ -135,7 +150,7 @@ export const projectCard: IProjectSectionCardData[] = [
         isRepo: true,
     },
     {
-        id: 7,
+        id: 35,
         title: "Sorting Visualizer",
         techStack: "HTML, CSS, JavaScript, Bootstrap, Git",
         Icon: LineChart,
@@ -149,9 +164,9 @@ export const projectCard: IProjectSectionCardData[] = [
         isRepo: true,
     },
     {
-        id: 8,
+        id: 40,
         title: "Piximage",
-        techStack: "React.Js, Axios, Bootstrap, JavaScript, Pexels API, Git",
+        techStack: "React.JS, Axios, Bootstrap, JavaScript, Pexels API, Git",
         Icon: Image,
         bgColor: "#A3B763",
         href: "https://github.com/Abhinav0115/Piximage",
@@ -163,9 +178,9 @@ export const projectCard: IProjectSectionCardData[] = [
         isRepo: true,
     },
     {
-        id: 9,
+        id: 45,
         title: "Movie Search App",
-        techStack: "React.Js, Axios, Bootstrap, JavaScript, TVMaze API, Git",
+        techStack: "React.JS, Axios, Bootstrap, JavaScript, TVMaze API, Git",
         Icon: FilmIcon,
         bgColor: "#C3ACD0",
         href: "https://github.com/Abhinav0115/Movie-App",
@@ -176,10 +191,10 @@ export const projectCard: IProjectSectionCardData[] = [
         isRepo: true,
     },
     {
-        id: 10,
+        id: 50,
         title: "TicTacToe Game",
         techStack:
-            "React.Js, Bootstrap, JavaScript, HTML, CSS, Tostify, GitHub",
+            "React.JS, Bootstrap, JavaScript, HTML, CSS, Tostify, GitHub",
         Icon: XCircle,
         bgColor: "#CE5A67",
         href: "https://github.com/Abhinav0115/TicTacToe_Game",
@@ -191,10 +206,10 @@ export const projectCard: IProjectSectionCardData[] = [
         isRepo: true,
     },
     {
-        id: 11,
+        id: 55,
         title: "Random Quote Generator",
         techStack:
-            "React.Js, Axios, Bootstrap, JavaScript, quotable.io API, Git",
+            "React.JS, Axios, Bootstrap, JavaScript, quotable.io API, Git",
         Icon: Quote,
         bgColor: "#706233",
         href: "https://github.com/Abhinav0115/Random_Quote",
@@ -206,7 +221,7 @@ export const projectCard: IProjectSectionCardData[] = [
         isRepo: true,
     },
     {
-        id: 12,
+        id: 60,
         title: "Basic Calculator",
         techStack: "HTML, CSS, JavaScript",
         Icon: Calculator,
@@ -220,7 +235,7 @@ export const projectCard: IProjectSectionCardData[] = [
         isRepo: true,
     },
     {
-        id: 13,
+        id: 65,
         title: "Scientific Calculator",
         techStack: "HTML, CSS, JavaScript",
         Icon: Sigma,
@@ -233,7 +248,7 @@ export const projectCard: IProjectSectionCardData[] = [
         isRepo: true,
     },
     {
-        id: 14,
+        id: 70,
         title: "BMI Calculator",
         techStack: "HTML, CSS, JavaScript",
         Icon: Puzzle,
@@ -246,7 +261,7 @@ export const projectCard: IProjectSectionCardData[] = [
         isRepo: true,
     },
     {
-        id: 15,
+        id: 75,
         title: "SignIn Form",
         techStack: "HTML, CSS, JavaScript",
         Icon: Frame,
@@ -340,7 +355,7 @@ export const frontendCard: ISectionCardData[] = [
 export const backendCard: ISectionCardData[] = [
     {
         id: 1,
-        title: "Node.Js",
+        title: "Node.JS",
         src: "/tech/backend/nodejs.webp",
         //exp: "1 day ago",
         // snippetCount: 1128,
@@ -348,7 +363,7 @@ export const backendCard: ISectionCardData[] = [
     },
     {
         id: 2,
-        title: "Express.Js",
+        title: "Express.JS",
         src: "/tech/backend/express.png",
         //exp: "1 day ago",
         // snippetCount: 1128,

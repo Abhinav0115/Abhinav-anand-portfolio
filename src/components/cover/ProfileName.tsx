@@ -12,7 +12,7 @@ const ProfileName: FC<ProfileNameProps> = ({}) => {
     // const [textColor, setTextColor] = useState("");
     return (
         <div
-            className="text-2xl lg:text-4xl flex flex-col font-bold text-highlight ml-3 lg:ml-0 "
+            className="text-2xl lg:text-4xl flex flex-col font-bold text-highlight ml-3 lg:ml-0 h-28"
             // style={{ color: textColor }}
         >
             I&apos;m
@@ -20,18 +20,18 @@ const ProfileName: FC<ProfileNameProps> = ({}) => {
                 preRenderFirstString={true}
                 sequence={[
                     "Abhinav Anand",
-                    1000,
+                    1100,
                     // () => setTextColor("red"),
                     "a Frontend Developer",
                     1000,
                     "",
-                    300,
+                    100,
                     // () => setTextColor("blue"),
-                    // "a Full Stack Developer",
-                    // 1000,
+                    "a Full Stack Developer",
+                    1000,
                 ]}
                 wrapper="span"
-                cursor={true}
+                cursor={false}
                 speed={20}
                 deletionSpeed={30}
                 repeat={Infinity}
@@ -44,7 +44,7 @@ const ProfileName: FC<ProfileNameProps> = ({}) => {
                         preRenderFirstString={true}
                         sequence={["", 300, "@abhinav0115", 1000]}
                         wrapper="span"
-                        cursor={true}
+                        cursor={false}
                         repeat={Infinity}
                         speed={20}
                         className="text-sm hidden lg:block"
