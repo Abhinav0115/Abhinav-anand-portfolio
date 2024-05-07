@@ -92,15 +92,15 @@ export const projectCard: IProjectSectionCardData[] = [
     },
     {
         id: 15,
-        title: "Amazon Clone App",
+        title: "E-commerce App",
         techStack:
-            "Typescript, React.JS, Next.JS, Material UI, axios, Redux-persist, Stripe Payments, Tailwindcss, Redux-toolkit, Supabase JS, Supabase Auth",
+            "Typescript, React.JS, Next.JS, Material UI, Axios, Redux-persist, Stripe Payments, Tailwindcss, Redux-toolkit, Supabase JS, Supabase Auth",
         Icon: BlocksIcon,
         bgColor: "#f98a1b",
         href: "https://github.com/Abhinav0115/Amazon-clone-app",
-        url: "https://amazon-clone-ecom.vercel.app/",
+        url: "https://ecommerce-abhi.vercel.app",
         description:
-            "Amazon Clone App built with Next.js, Tailwind CSS, Supabase, Redux Toolkit, TypeScript, Stripe, and more.",
+            "E-commerce App built with Next.js, Tailwind CSS, Supabase, Redux Toolkit, TypeScript, Stripe, and more.",
         isCompleted: true,
         isLive: true,
         isRepo: true,
