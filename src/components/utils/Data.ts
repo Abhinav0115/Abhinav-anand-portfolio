@@ -16,6 +16,7 @@ import {
     Puzzle,
     Frame,
     BlocksIcon,
+    TentIcon,
 } from "lucide-react";
 
 export interface ISectionCardData {
@@ -217,6 +218,21 @@ export const projectCard: IProjectSectionCardData[] = [
         url: "https://abhinav0115.github.io/Random_Quote/",
         description:
             "Random famous Quote generator build using API (api.quotable.io).",
+        isCompleted: true,
+        isLive: true,
+        isRepo: true,
+    },
+    {
+        id: 57,
+        title: "Auto Top-up Component",
+        techStack:
+            "Next.JS, Tailwind CSS, React.JS, TypeScript, Material UI, JavaScript, Git",
+        Icon: TentIcon,
+        bgColor: "#FFB1B1",
+        href: "https://github.com/Abhinav0115/Topup-component",
+        url: "https://topup-component.vercel.app/",
+        description:
+            "Auto Top-up feature for your account. Never run out of credits. Setup Auto Top-up and we will auto-purchase credits for you.",
         isCompleted: true,
         isLive: true,
         isRepo: true,

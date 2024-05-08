@@ -20,7 +20,7 @@ const Intro: FC<IntroProps> = ({}) => {
                 ScrollReveal({
                     duration: 700,
                     delay: 50,
-                    reset: true,
+                    // reset: true,
                     opacity: 0,
                     easing: "ease-in-out",
                     distance: "150px",
