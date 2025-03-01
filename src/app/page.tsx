@@ -2,9 +2,11 @@ import Cover from "@/components/Cover";
 import CardSection from "@/components/sections/CardSection";
 import Hero from "@/components/sections/Hero";
 import ProjectCardSection from "@/components/sections/ProjectCardSection";
+import WorkExperience from "@/components/sections/WorkExperience";
 import {
     backendCard,
     databaseCard,
+    WorkExperienceData,
     // devopsCards,
     frontendCard,
     otherCards,
@@ -25,7 +27,8 @@ export default function Home() {
 
                 {/* xxxxxxxxxxxxxxxxxxxx */}
                 {/*  Experience section  */}
-                {/* <span id="Experience" className="invisible" /> */}
+                <span id="Experience" className="invisible" />
+                <WorkExperience title="Work Experience" data={WorkExperienceData} />
                 {/* xxxxxxxxxxxxxxxxxxxx */}
 
                 {/*   Project section    */}

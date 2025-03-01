@@ -9,7 +9,7 @@ html {
 :root {
     /* Background */
     --bg-primary: #14131a;
-    --card-primary: #1c1b23;
+    --card-primary: rgb(29, 29, 40);
 
     /* Button */
     --btn-highlight: #2bd576;
@@ -19,9 +19,9 @@ html {
 
     /* Text */
     --text-primary: #abaab0;
-    --text-secondary: #79787f;
+    --text-secondary: #a1a0a7;
     --text-dark: #000;
-    --text-info: #4f4f52;
+    --text-info: #z;
     --text-highlight: #fff;
 }
 

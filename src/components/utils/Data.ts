@@ -30,18 +30,118 @@ export interface ISectionCardData {
 }
 
 export interface IProjectSectionCardData {
-    id: number;
-    Icon: LucideIcon;
+    id?: number;
     title: string;
+    Icon: LucideIcon;
+    href?: string;
     bgColor: string;
     techStack: string;
-    href?: string;
     url?: string;
-    description?: string;
-    isCompleted: boolean;
     isLive: boolean;
+    isCompleted: boolean;
     isRepo?: boolean;
+    description?: string;
 }
+
+export interface IWorkExperienceData {
+    id?: number;
+    companyName: string;
+    companyLogo: string;
+    jobTitle: string;
+    role: string;
+    duration: string;
+    totalExpereince: string;
+    keyAchievement: string[];
+    keyResponsibilities: string[];
+    location: string;
+    description: string;
+    techStack: string[];
+    isCurrent?: boolean;
+    isFullTime?: boolean;
+    isInternship?: boolean;
+    isRemote?: boolean;
+}
+
+export const WorkExperienceData: IWorkExperienceData[] = [
+    {
+        id: 1,
+        companyName: "KayJay Global Solutions",
+        companyLogo: "/experience/kjgs_logo.svg",
+        jobTitle: "Software Developer",
+        role: "Fullstack Developer",
+        duration: "March 2024 - January 2025",
+        totalExpereince: "1 years",
+        location: "Udaipur, Rajasthan",
+        description:"As a Fullstack Developer, I collaborated closely with both frontend and backend teams to design, develop, and integrate components and APIs. I worked primarily with the MERN stack (MongoDB, Express, React, Node.js) and Next.js to build scalable, efficient web applications, improving both client-facing and internal tools.",
+        keyResponsibilities: [
+            "Collaborated with cross-functional teams to design, develop, and integrate frontend and backend components, ensuring alignment with organizational workflows.",
+            "Developed and implemented RESTful APIs, and integrated third-party services to enhance functionality and improve user experience.",
+            "Contributed to multiple projects, including a client-facing web application and internal tools such as a company app and project management system.",
+            "Wrote clean, efficient, and maintainable code to ensure high performance and scalability of applications",
+            "Worked in an agile development environment, contributing to discussions, and meeting key milestones on time."
+        ],
+        keyAchievement: [
+            "Collaborated with teams to integrate components and APIs across platforms, ensuring seamless functionality and flow between frontend and backend systems.",
+            "Contributed to the development of key features for both client-facing and internal tools, improving operational efficiency and enhancing user engagement.",
+            "Designed and implemented RESTful APIs and integrated third-party services to improve the overall functionality of applications.",
+        ],
+        techStack: [
+            "React.JS",
+            "Next.JS",
+            "Redux",
+            "TypeScript",
+            "Node.JS",
+            "Express.JS",
+            "JavaScript",
+            "MongoDB",
+            "Tailwind CSS",
+            "Material UI",
+            "Bootstrap",
+            "Git",
+        ],
+        isCurrent: false,
+        isFullTime: true,
+        isInternship: false,
+        isRemote: true,
+    },
+    {
+        id: 2,
+        companyName: "Codemon",
+        companyLogo: "/experience/codemon_logo.png",
+        jobTitle: "Software Developer",
+        role: "Frontend Developer",
+        duration: "March 2023 - September 2023",
+        totalExpereince: "6 months",
+        location: "Deoghar, Jharkhand",
+        description:"As a Frontend Developer, I focused on creating seamless, user-friendly web experiences. My work involved developing responsive, SEO-friendly websites using React, Next.js, and Tailwind CSS. I collaborated with the team to ensure an intuitive UI/UX and optimized user flows, leading to increased user satisfaction and engagement.",
+        keyResponsibilities: [
+            "Developed a resume-building website, focusing on designing an intuitive user interface (UI) and smooth user experience (UX), resulting in improved user satisfaction.",
+            "Designed and implemented an SEO-friendly blog website using React, Next.js, and Tailwind CSS, which contributed to an increase in organic traffic and user engagement.",
+            "Enhanced website responsiveness and accessibility across all devices, with a particular focus on boosting mobile user engagement.",
+            "Ensured the smooth integration of frontend components with APIs using Postman for testing, improving the overall functionality and performance of web applications.",
+        ],
+        keyAchievement: [
+            "Developed a resume-building platform with optimized user flows and design, enhancing user interaction and experience.",
+            "Designed an SEO-friendly blog website that significantly boosted organic traffic and engagement, helping the website rank better on search engines.",
+            "Enhanced the responsiveness and accessibility of web applications, ensuring a seamless experience for users on all devices, especially mobile.",
+        ],
+        techStack: [
+            "React.JS",
+            "Next.JS",
+            "Redux",
+            "JavaScript",
+            "Tailwind CSS",
+            "Bootstrap",
+            "Git",
+            "Postman API",
+        ],
+        isCurrent: false,
+        isFullTime: false,
+        isInternship: true,
+        isRemote: true,
+    }
+    
+]
 
 export const projectCard: IProjectSectionCardData[] = [
     {
@@ -83,8 +183,7 @@ export const projectCard: IProjectSectionCardData[] = [
         bgColor: "#e9c46a",
         href: "https://github.com/Abhinav0115/file-sharing",
         url:
-            "https://file-sharing-app-su3e.onrender.com/" ||
-            "https://file-sharing-henna.vercel.app/",
+            "https://file-sharing-app-su3e.onrender.com/",
         description:
             "A Simple File Sharing Application with 7 days validity and 60Mb data sharing limits.",
         isCompleted: true,
@@ -429,14 +528,14 @@ export const databaseCard: ISectionCardData[] = [
         // snippetCount: 1128,
         progress: 80,
     },
-    // {
-    //     id: 2,
-    //     title: 'MySQL',
-    //     src: '/tech/database/mysql.jpeg',
-    //exp: '1 day ago',
-    // snippetCount: 1128,
-    //     progress: 80,
-    // },
+    {
+        id: 2,
+        title: 'MySQL',
+        src: '/tech/database/mysql.jpeg',
+        // exp: '1 day ago',
+        // snippetCount: 1128,
+        progress: 80,
+    },
     // {
     //     id: 3,
     //     title: 'Redis',
