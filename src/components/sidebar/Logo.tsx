@@ -12,10 +12,10 @@ const Logo: FC<LogoProps> = ({}) => {
 {/*             <div className="capitalize text-2xl font-semibold">Portfolio</div> */}
             <div className="">
             <Image
-                    className="object-contain bg-transparent"
+                    className="object-contain bg-black"
                     src={"/images/Monochrome_Logo_ Abhinav.png"}
-                    width={60}
-                    height={50}
+                    width={90}
+                    height={30}
                     alt={"Portfolio website Logo"}
                 />    
             </div>
