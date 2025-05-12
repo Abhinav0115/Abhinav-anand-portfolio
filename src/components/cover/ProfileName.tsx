@@ -27,7 +27,7 @@ const ProfileName: FC<ProfileNameProps> = ({}) => {
                     "",
                     100,
                     // () => setTextColor("blue"),
-                    "a Full Stack Developer",
+                    "a MERN Stack Developer",
                     1000,
                 ]}
                 wrapper="span"
