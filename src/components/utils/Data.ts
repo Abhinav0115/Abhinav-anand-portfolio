@@ -17,6 +17,7 @@ import {
     Frame,
     BlocksIcon,
     TentIcon,
+    ChefHat
 } from "lucide-react";
 
 export interface ISectionCardData {
@@ -44,8 +45,23 @@ export interface IProjectSectionCardData {
 }
 
 export const projectCard: IProjectSectionCardData[] = [
-    {
+        {
         id: 1,
+        title: "Recipe Finder",
+        techStack:
+            "React.js, Tailwind CSS, theMealDB, React createContext, Vite, Axios",
+        Icon: ChefHat,
+        bgColor: "#06202B",
+        href: "https://github.com/Abhinav0115/Recipe-Finder",
+        url: "https://recipe-finder-mealdb.netlify.app/",
+        description:
+            "A React-based web application that displays delicious recipes using TheMealDB API. Users can explore recipes by category or area, and view detailed information in a modal interface.",
+        isCompleted: true,
+        isRepo: true,
+        isLive: true,
+    },
+    {
+        id: 4,
         title: "College Job Portal",
         techStack:
             "Next.JS 13, Bootstrap5, React.JS, Node..JS, Express, MongoDB, Mongoose, Nodemailer, Redux, Next-Auth.",
@@ -57,7 +73,7 @@ export const projectCard: IProjectSectionCardData[] = [
             "A job portal for students of OPJU. Students can apply for jobs, internships, and can also post jobs.",
         isCompleted: true,
         isRepo: true,
-        isLive: true,
+        isLive: false,
     },
     {
         id: 5,
