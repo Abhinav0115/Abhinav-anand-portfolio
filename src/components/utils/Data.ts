@@ -51,7 +51,7 @@ export const projectCard: IProjectSectionCardData[] = [
         techStack:
             "React.js, Tailwind CSS, theMealDB, React createContext, Vite, Axios",
         Icon: ChefHat,
-        bgColor: "#06202B",
+        bgColor: "#8E1616",
         href: "https://github.com/Abhinav0115/Recipe-Finder",
         url: "https://recipe-finder-mealdb.netlify.app/",
         description:
