@@ -1,21 +1,10 @@
 import { FC } from "react";
 import { LucideIcon } from "lucide-react";
 import Link from "next/link";
+import {IProjectSectionCardData } from "../utils/Data";
 
-interface ProjectsCardProps {
-    title: string;
-    Icon: LucideIcon;
-    href?: string;
-    bgColor: string;
-    techStack: string;
-    url?: string;
-    isLive?: boolean;
-    isCompleted?: boolean;
-    isRepo?: boolean;
-    description?: string;
-}
 
-const ProjectsCard: FC<ProjectsCardProps> = ({
+const ProjectsCard: FC<IProjectSectionCardData> = ({
     title,
     Icon,
     href,

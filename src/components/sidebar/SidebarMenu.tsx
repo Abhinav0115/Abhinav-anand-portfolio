@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC } from 'react';
 import {
     CodeIcon,
     Flame,
@@ -9,15 +9,16 @@ import {
     CodepenIcon,
     CpuIcon,
     FileSpreadsheet,
-} from "lucide-react";
+    Laptop2Icon as LaptopIcon,
+} from 'lucide-react';
 
-import { SiGeeksforgeeks, SiLeetcode } from "react-icons/si";
-import List from "../ui/List";
-import { useMenu } from "../Provider";
-import { projectCard } from "@/components/utils/Data";
+import { SiGeeksforgeeks, SiLeetcode } from 'react-icons/si';
+import List from '../ui/List';
+import { useMenu } from '../Provider';
+import { projectCard } from '@/components/utils/Data';
 
-import SideProject from "./sidebarprojectSection";
-import Link from "next/link";
+import SideProject from './sidebarprojectSection';
+import Link from 'next/link';
 
 interface MenuProps {}
 
@@ -33,19 +34,37 @@ const Menu: FC<MenuProps> = ({}) => {
                 <X className={`text-primary`} />
             </div>
             {/* List 1 */}
-            <List link="/" effect="slideUp">
+            <List link="/" effect="slideUp" className="hover:text-blue-400">
                 <Home /> Home
             </List>
-            <List link="#Introduction" effect="slideUp">
+            <List
+                link="#Introduction"
+                effect="slideUp"
+                className="hover:text-red-400"
+            >
                 <Flame /> Career Objective
             </List>
-            {/* <List link="#Experience" effect="slideUp">
-                <LaptopIcon /> Working Experience
-            </List> */}
-            <List link="#Projects" effect="slideUp">
-                <CodeIcon /> Projects
+            <List
+                link="#Experience"
+                effect="slideUp"
+                className="hover:text-green-400"
+            >
+                <LaptopIcon />
+                Working Experience
             </List>
-            <List link="#TechStack" effect="slideUp">
+            <List
+                link="#Projects"
+                effect="slideUp"
+                className="hover:text-[#e6db11]"
+            >
+                <CodeIcon />
+                Projects
+            </List>
+            <List
+                link="#TechStack"
+                effect="slideUp"
+                className="hover:text-cyan-400"
+            >
                 <CpuIcon /> Tech Stack
             </List>
             {/* <List link="#Education" effect="slideUp">
@@ -112,7 +131,7 @@ const Menu: FC<MenuProps> = ({}) => {
             >
                 For more projects, please
                 <br />
-                visit the{" "}
+                visit the{' '}
                 <span className="text-red-800">&apos;Projects&apos; </span>
                 section.
             </Link>
