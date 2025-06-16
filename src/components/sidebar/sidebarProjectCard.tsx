@@ -38,12 +38,14 @@ const SidebarProjectCard: FC<ProjectsCardProps> = ({
                         className=""
                     >
                         <div
-                            className="flex h-full text-white py-1 px-1 rounded-md justify-center items-center"
+                            className={`flex h-full text-white py-1 px-1 rounded-md justify-center items-center`} 
                             style={{ backgroundColor: bgColor }}
                         >
                             <Icon className="h-6 w-6" />
                         </div>
-                        {title}
+                        <span className="font-semibold">
+                            {title}
+                        </span>
                     </List>
                     {isLive && (
                         <Link
