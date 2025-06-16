@@ -17,7 +17,9 @@ import {
     Frame,
     BlocksIcon,
     TentIcon,
-    ChefHat
+    ChefHat,
+    SquareCheckBigIcon,
+    SquareCheckIcon
 } from "lucide-react";
 
 export interface ISectionCardData {
@@ -145,13 +147,28 @@ export const WorkExperienceData: IWorkExperienceData[] = [
 ]
 
 export const projectCard: IProjectSectionCardData[] = [
-        {
-        id: 1,
+    {
+        id: 5,
+        title: "TaskHubb",
+        techStack:
+            "Next.js, Typescript, React.js, Tailwind CSS, Next-theme, Toastify, Storage Persistence, Git, Vercel",
+        Icon: SquareCheckBigIcon,
+        bgColor: "#44337a",
+        href: "https://github.com/Abhinav0115/taskhubb",
+        url: "https://taskhubb.vercel.app/",
+        description:
+            "TaskHubb is a user-friendly task management app designed to help you stay organized and maximize your productivity. Effortlessly create, manage, and track your tasks with just a few clicks. With its sleek, modern design, TaskHubb offers powerful features like due dates, priorities, and customizable tags to keep your tasks neatly organized.",
+        isCompleted: true,
+        isRepo: true,
+        isLive: true,
+    },
+    {
+        id: 6,
         title: "Recipe Finder",
         techStack:
             "React.js, Tailwind CSS, theMealDB, React createContext, Vite, Axios",
         Icon: ChefHat,
-        bgColor: "#8E1616",
+        bgColor: "#73946B",
         href: "https://github.com/Abhinav0115/Recipe-Finder",
         url: "https://recipe-finder-mealdb.netlify.app/",
         description:
@@ -161,7 +178,7 @@ export const projectCard: IProjectSectionCardData[] = [
         isLive: true,
     },
     {
-        id: 4,
+        id: 7,
         title: "College Job Portal",
         techStack:
             "Next.JS 13, Bootstrap5, React.JS, Node..JS, Express, MongoDB, Mongoose, Nodemailer, Redux, Next-Auth.",
@@ -176,7 +193,7 @@ export const projectCard: IProjectSectionCardData[] = [
         isLive: false,
     },
     {
-        id: 5,
+        id: 8,
         title: "Prompts.ai",
         techStack:
             "Next.JS 13, JavaScript, Tailwind CSS, React.JS, MongoDB, Mongoose, DaisyUI.",

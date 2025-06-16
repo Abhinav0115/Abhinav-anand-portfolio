@@ -29,7 +29,7 @@ const ProjectsCard: FC<IProjectSectionCardData> = ({
                         </div>
                         <div className="flex flex-col mt-1">
                             <div className="flex font-bold mb-2">{title}</div>
-                            <div className="flex text-info text-sm">
+                            <div className="flex text-gray-400 text-sm">
                                 {techStack}
                             </div>
                         </div>

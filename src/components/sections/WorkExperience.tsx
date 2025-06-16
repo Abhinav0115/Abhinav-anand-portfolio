@@ -5,6 +5,8 @@ import {
   Briefcase,
   Calendar,
   ChevronRight,
+  ChevronDown,
+  ChevronUp,
   Building,
   Award,
 } from 'lucide-react';
@@ -64,7 +66,7 @@ const WorkExperience: FC<WorkExperienceProps> = ({ title, data }) => {
                         {experience.jobTitle} ({experience.role})
                       </h3>
 
-                      <div className="flex items-center text-gray-100">
+                      <div className="flex items-center text-gray-300">
                         <Calendar className="w-4 h-4 mr-2" />
                         <span>{experience.duration}</span>
                       </div>
@@ -90,9 +92,9 @@ const WorkExperience: FC<WorkExperienceProps> = ({ title, data }) => {
                     </div>
                   </div>
 
-                  <ChevronRight
+                  <ChevronDown
                     className={`w-5 h-5 text-gray-400 transition-transform duration-300 ${
-                      expandedId === experience.id ? 'transform rotate-90' : ''
+                      expandedId === experience.id ? 'transform -rotate-180' : 'transform rotate-0'
                     }`}
                   />
                 </div>
