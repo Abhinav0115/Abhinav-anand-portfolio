@@ -15,23 +15,26 @@ const ProfileName: FC<ProfileNameProps> = ({}) => {
             className="text-2xl lg:text-4xl flex flex-col font-bold text-highlight ml-3 lg:ml-0 h-28"
             // style={{ color: textColor }}
         >
-            I&apos;m
+            <span className="text-gray-200">
+                I<span className="text-cyan-400">&apos;</span>m{" "}
+                <span className=" text-cyan-400">Abhinav Anand</span>
+            </span>
             <TypeAnimation
                 preRenderFirstString={true}
                 sequence={[
-                    "Abhinav Anand",
-                    1100,
+                    // "Abhinav Anand",
+                    // 1100,
                     // () => setTextColor("red"),
                     "a Frontend Developer",
                     1000,
                     "",
                     100,
                     // () => setTextColor("blue"),
-                    "a Full Stack Developer",
+                    "a MERN Stack Developer",
                     1000,
                 ]}
                 wrapper="span"
-                cursor={false}
+                cursor={true}
                 speed={20}
                 deletionSpeed={30}
                 repeat={Infinity}
