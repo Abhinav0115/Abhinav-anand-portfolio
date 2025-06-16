@@ -427,16 +427,16 @@ export const projectCard: IProjectSectionCardData[] = [
 export const frontendCard: ISectionCardData[] = [
     {
         id: 1,
-        title: "React.JS",
-        src: "/tech/frontend/ReactJS.jpg",
+        title: "Next.JS 14",
+        src: "/tech/frontend/nextjs14.webp",
         //exp: "1 day ago",
         // snippetCount: 1128,
         progress: 80,
     },
     {
         id: 2,
-        title: "Next.JS 13",
-        src: "/tech/frontend/nextjs13.jpeg",
+        title: "React.JS",
+        src: "/tech/frontend/ReactJS.jpg",
         //exp: "1 day ago",
         // snippetCount: 1128,
         progress: 80,
@@ -464,7 +464,7 @@ export const frontendCard: ISectionCardData[] = [
         src: "/tech/frontend/typescript.png",
         //exp: "1 day ago",
         // snippetCount: 1128,
-        progress: 30,
+        progress: 70,
     },
     {
         id: 6,
@@ -482,23 +482,23 @@ export const frontendCard: ISectionCardData[] = [
         // snippetCount: 1128,
         progress: 90,
     },
-    // {
-    //     id: 8,
-    //     title: "HTML",
-    //     src: "/tech/frontend/html.jpeg",
-    //     //exp: "1 day ago",
-    //     // snippetCount: 1128,
-    //     progress: 90,
-    //     href: "https://developer.mozilla.org/en-US/docs/Web/HTML",
-    // },
-    // {
-    //     id: 9,
-    //     title: "CSS",
-    //     src: "/tech/frontend/css.jpeg",
-    //     //exp: "1 day ago",
-    //     // snippetCount: 1128,
-    //     progress: 90,
-    // },
+    {
+        id: 8,
+        title: "CSS",
+        src: "/tech/frontend/css.jpeg",
+        //exp: "1 day ago",
+        // snippetCount: 1128,
+        progress: 90,
+    },
+    {
+        id: 9,
+        title: "HTML",
+        src: "/tech/frontend/html.jpeg",
+        //exp: "1 day ago",
+        // snippetCount: 1128,
+        progress: 90,
+        href: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+    },
 ];
 
 export const backendCard: ISectionCardData[] = [
@@ -706,8 +706,16 @@ export const otherCards: ISectionCardData[] = [
         // snippetCount: 1128,
         progress: 80,
     },
+    {
+        id: 4,
+        title: "Docker",
+        src: "/tech/devops/docker.webp",
+        //exp: "1 day ago",
+        // snippetCount: 1128,
+        progress: 75,
+    },
     // {
-    //     id: 4,
+    //     id: 5,
     //     title: 'GraphQl',
     //     src: '/tech/others/graphql.png',
     //exp: '1 day ago',
