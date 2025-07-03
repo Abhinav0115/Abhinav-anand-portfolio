@@ -20,6 +20,9 @@ import {
     ChefHat,
     SquareCheckBigIcon,
     SquareCheckIcon,
+    LucideBarChartBig,
+    LayoutDashboard,
+    ShoppingCart
 } from "lucide-react";
 
 export interface ISectionCardData {
@@ -210,6 +213,21 @@ export const projectCard: IProjectSectionCardData[] = [
     },
     {
         id: 10,
+        title: "Admin Dashboard",
+        techStack:
+            "React.JS, Tailwind CSS, Vite, React-Icons, Recharts, React-Toastify, xlsx, framer-motion",
+        Icon: LayoutDashboard,
+        bgColor: "#511D43",
+        href: "https://github.com/Abhinav0115/admin-dashboard",
+        url: "https://dashboard-adm.netlify.app/",
+        description:
+            "Modern, responsive admin dashboard built with React, Vite, and Tailwind CSS. Visualize business analytics, sales, users, products, and more with interactive charts and a clean UI.",
+        isCompleted: true,
+        isLive: true,
+        isRepo: true,
+    },
+    {
+        id: 12,
         title: "File Sharing",
         techStack:
             "React.JS, Node.JS, Express, MongoDB, Git, Vercel, Mongoose, Tailwind CSS.",
@@ -228,7 +246,7 @@ export const projectCard: IProjectSectionCardData[] = [
         title: "E-commerce App",
         techStack:
             "Typescript, React.JS, Next.JS, Material UI, Axios, Redux-persist, Stripe Payments, Tailwindcss, Redux-toolkit, Supabase JS, Supabase Auth",
-        Icon: BlocksIcon,
+        Icon: ShoppingCart,
         bgColor: "#f98a1b",
         href: "https://github.com/Abhinav0115/Amazon-clone-app",
         url: "https://ecommerce-abhi.vercel.app",
