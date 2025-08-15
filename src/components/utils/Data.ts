@@ -22,7 +22,8 @@ import {
     SquareCheckIcon,
     LucideBarChartBig,
     LayoutDashboard,
-    ShoppingCart
+    ShoppingCart,
+    GitBranchIcon
 } from "lucide-react";
 
 export interface ISectionCardData {
@@ -152,7 +153,7 @@ export const WorkExperienceData: IWorkExperienceData[] = [
 
 export const projectCard: IProjectSectionCardData[] = [
     {
-        id: 5,
+        id: 13,
         title: "TaskHubb",
         techStack:
             "Next.js, Typescript, React.js, Tailwind CSS, Next-theme, Toastify, Storage Persistence, Git, Vercel",
@@ -167,7 +168,20 @@ export const projectCard: IProjectSectionCardData[] = [
         isLive: true,
     },
     {
-        id: 6,
+        id: 14,
+        title: "Repository Explorer",
+        techStack: "Next.js, React, Tailwind CSS, Material-UI, Axios, React-Toastify, React Icons, Storage Persistence, Git, Vercel",
+        Icon: GitBranchIcon,
+        bgColor: "#ab5e4b",
+        href: "https://github.com/Abhinav0115/github",
+        url: "https://githubrepo-explorer.vercel.app/",
+        description: "A modern, responsive web application that allows users to search for GitHub users and explore their repositories with beautiful UI, real-time search, caching, favorites, and comprehensive analytics dashboard.",
+        isCompleted: true,
+        isRepo: true,
+        isLive: true,
+    },
+    {
+        id: 14,
         title: "Recipe Finder",
         techStack:
             "React.js, Tailwind CSS, theMealDB, React createContext, Vite, Axios",
@@ -182,7 +196,7 @@ export const projectCard: IProjectSectionCardData[] = [
         isLive: true,
     },
     {
-        id: 7,
+        id: 15,
         title: "College Job Portal",
         techStack:
             "Next.JS 13, Bootstrap5, React.JS, Node..JS, Express, MongoDB, Mongoose, Nodemailer, Redux, Next-Auth.",
@@ -197,7 +211,7 @@ export const projectCard: IProjectSectionCardData[] = [
         isLive: false,
     },
     {
-        id: 8,
+        id: 16,
         title: "Prompts.ai",
         techStack:
             "Next.JS 13, JavaScript, Tailwind CSS, React.JS, MongoDB, Mongoose, DaisyUI.",
@@ -212,7 +226,7 @@ export const projectCard: IProjectSectionCardData[] = [
         isRepo: true,
     },
     {
-        id: 10,
+        id: 17,
         title: "Admin Dashboard",
         techStack:
             "React.JS, Tailwind CSS, Vite, React-Icons, Recharts, React-Toastify, xlsx, framer-motion",
@@ -227,7 +241,7 @@ export const projectCard: IProjectSectionCardData[] = [
         isRepo: true,
     },
     {
-        id: 12,
+        id: 18,
         title: "File Sharing",
         techStack:
             "React.JS, Node.JS, Express, MongoDB, Git, Vercel, Mongoose, Tailwind CSS.",
@@ -242,7 +256,7 @@ export const projectCard: IProjectSectionCardData[] = [
         isRepo: true,
     },
     {
-        id: 15,
+        id: 19,
         title: "E-commerce App",
         techStack:
             "Typescript, React.JS, Next.JS, Material UI, Axios, Redux-persist, Stripe Payments, Tailwindcss, Redux-toolkit, Supabase JS, Supabase Auth",
